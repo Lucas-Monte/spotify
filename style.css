@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+.nav-global {
+    background-color: black;
+    padding: 8px;
+    margin: -8px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.nav-header {
+    display: flex;
+    align-items: baseline;
+}
+
+.nav-header-logo {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.nav-header-logo i {
+    font-size: 24px;
+    
+}
+
+.nav-header-home {
+    font-size: 15px;
+    margin-left: 25px;
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #1f1f1f;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #1f1f1f;
+    padding: 12px;
+    border-radius: 20px;
+    width: 500px;
+    margin-left: 8px;
+}
+
+
+.search-bar input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 100%;
+    margin-left: 10px;
+    outline: none;
+}
+
+.nav-header-group {
+    display: flex;
+    align-items: baseline;
+}
+
+.nav-header-link{
+    margin-left: 120px;
+}
+
+.nav-header-link a{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.nav-header-bar{
+    border: 1px solid #b3b3b3;
+    margin: 20px;
+    height: 25px;
+}
+
+.nav-header-install {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.nav-header-install button {
+    margin-left: 8px;
+    background-color: transparent;
+    color: #b3b3b3;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-header-signup button {
+    margin-left: 25px;
+    border: none;
+    background-color: transparent;
+    color: #b3b3b3;
+    cursor: pointer;
+}
+
+.nav-header-getin {
+    margin-left: 20px;
+    margin-right: 25px;
+}
+
+.nav-header-getin button{
+    padding: 8px 32px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #121212;
+    padding: 24px 24px 90px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 12px;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+
+
+.nav-library {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-library i, .nav-library p {
+    color: #B7B3B6;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.nav-playlist, .nav-podcast {
+    background-color: #242424;
+    padding: 16px;
+    border-radius: 8px;
+
+}
+
+.nav-playlist button, .nav-podcast button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 6px 10px;
+    margin-top: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.nav-playlist p, .nav-podcast p {
+    font-size: 12px;
+}
+
+.nav-footer {
+    margin-top: auto;
+}
+
+.nav-footer a {
+    color: #a7a7a7;
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 12px;
+    margin-bottom: 8px;
+}
+
+.nav-lang-button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 8px;
+    margin-top: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+main {
+    background-color: #151515;
+    padding: 24px;
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-left: 8px;
+    margin-top: 8px;
+    margin-right: 8px;
+    border-radius: 12px;
+}
+
+
+
+.artists-grid, .albums-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.artist-card, .album-card {
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.artist-card:hover, .album-card:hover {
+    background-color: #282828;
+}
+
+.artist-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.album-card img {
+    width: 100%;
+
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.artist-card h3, .album-card h3 {
+    font-size: 15px;
+    text-align: left;
+}
+
+.artist-card p, .album-card p {
+    color: #B7B3B6;
+    font-size: 10px;
+    margin-top: 8px;
+    text-align: left;
+}
