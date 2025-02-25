@@ -27,12 +27,11 @@
 }
 
 .nav-header-logo i {
-    font-size: 24px;
-    
+    font-size: 1.5rem;
 }
 
 .nav-header-home {
-    font-size: 15px;
+    font-size: 1rem;
     margin-left: 25px;
     margin-top: 10px;
     padding: 12px;
@@ -74,7 +73,7 @@
 .nav-header-link a{
     text-decoration: none;
     color: #b3b3b3;
-    font-size: 15px;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -87,7 +86,7 @@
 .nav-header-install {
     display: flex;
     align-items: center;
-    font-size: 15px;
+    font-size: 1rem;
     margin-left: 20px;
 }
 
@@ -118,7 +117,7 @@
     color: black;
     border-radius: 20px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -154,7 +153,7 @@ body {
 
 .nav-library i, .nav-library p {
     color: #B7B3B6;
-    font-size: 14px;
+    font-size: 0.9rem;
     cursor: pointer;
 }
 
@@ -177,7 +176,7 @@ body {
 }
 
 .nav-playlist p, .nav-podcast p {
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .nav-footer {
@@ -187,7 +186,7 @@ body {
 .nav-footer a {
     color: #a7a7a7;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 0.75rem;
     margin-right: 12px;
     margin-bottom: 8px;
 }
@@ -248,7 +247,7 @@ main {
 }
 
 .artist-card h3, .album-card h3 {
-    font-size: 15px;
+    font-size: 1rem;
     text-align: left;
 }
 
@@ -257,4 +256,59 @@ main {
     font-size: 10px;
     margin-top: 8px;
     text-align: left;
+}
+
+@media (max-width: 1084px) {
+    .nav-global {
+        justify-content: center;
+    }
+
+    .nav-header-logo {
+        margin-left: auto;
+        margin-top: auto;
+    }
+
+    .nav-header-home {
+        margin-left: auto;
+        margin-top: auto;
+        padding: 2%;
+    }
+
+    .search-bar {
+        width: 35%;
+        margin-left: auto;
+        align-items: center;
+    }
+
+    .search-bar input {
+        margin-left: 5%;
+    }
+
+    .nav-header-link{
+        margin-left: auto;
+    }
+
+    .nav-header-bar{
+        border: 1px solid #b3b3b3;
+        margin: 5%;
+    }
+    
+    .nav-header-install {
+        margin-left: auto;
+    }
+    
+    .nav-header-signup button {
+        margin-left: 5%;
+    }
+    
+    .nav-header-getin {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .nav-header-getin button{
+        padding: 8px 16px;
+    }
+    
+    
 }
