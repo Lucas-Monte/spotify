@@ -277,9 +277,7 @@ main {
         padding: 20px;
         margin: 0;
         justify-content: center;
-        display: flex;
         align-items: center;
-        justify-content: center;
     }
 
 
@@ -347,7 +345,7 @@ main {
         list-style: none;
     }
 
-    .nav-header-bar{
+    .nav-header-bar {
         display: none;
     }
 
@@ -389,7 +387,6 @@ main {
     .nav-header-getin {
         margin: 0;
     }
-
 
     .container {
         flex-direction: column-reverse;
