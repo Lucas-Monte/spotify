@@ -274,32 +274,46 @@ main {
 
 @media (max-width: 1084px) {
     .nav-global {
-        padding: 8px;
+        padding: 20px;
         margin: 0;
+        justify-content: center;
+        display: flex;
+        align-items: center;
         justify-content: center;
     }
 
+
     .nav-header-logo {
-        margin-left: auto;
+        margin-left: 0;
         margin-top: auto;
     }
 
     .nav-header-home {
         margin-left: auto;
         margin-top: auto;
-        padding: 2%;
+        padding: 0;
+        background-color: black;
+    }
+    
+    .nav-header-home i {
+        font-size: 1.5rem;
     }
     
     .search-bar {
-        width: 35%;
+        width: 5%;
         margin-left: auto;
         align-items: center;
         justify-content: center;
-        padding: 5%;
+        padding: 0;
+        background-color: black;
     }
 
     .search-bar input {
         margin: auto;
+    }
+
+    .search-bar i {
+        font-size: 1.5rem;
     }
 
     .nav-header-group {
@@ -377,10 +391,14 @@ main {
         flex-direction: column-reverse;
         height: auto;
     }
-
+    
     .sidebar {
         width: auto;
         margin: 8px;
+    }
+
+    main {
+        margin-top: 0;
     }
 
     .artists-grid, .albums-grid {
@@ -391,7 +409,7 @@ main {
     }
 
     .artist-card, .album-card {
-        min-width: 250px;
+        min-width: 180px;
     }
 
     .artist-card h3, .album-card h3 {
