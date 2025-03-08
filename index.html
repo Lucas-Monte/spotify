@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/fcc8221dad.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" sizes="16x16" href=img/spotify.png>
     <title>LM Music</title>
 </head>
 <body>
@@ -24,26 +23,39 @@
                 <input placeholder="O que você quer ouvir?">
             </div>
         </div>    
-        <div class="nav-header-group">
-            <div class="nav-header-link">
-                <a href="#"><strong>Premium</strong></a>
-                <a href="#"><strong>Suporte</strong></a>
-                <a href="#"><strong>Baixar</strong></a>
-            </div>
-            <div class="nav-header-bar">
+        <nav class="nav-header-group">
+            <div class="nav-menu">
+                <div class="nav-header-link">
+                    <div class="links">
+                        <a href="#"><strong>Premium</strong></a>
+                        <a href="#"><strong>Suporte</strong></a>
+                        <a href="#"><strong>Baixar</strong></a>
+                    </div>
+                    <ul class="menu-toggle-links">
+                        <li><a href="#"><strong>Premium</strong></a></li>
+                        <li><a href="#"><strong>Suporte</strong></a></li>
+                        <li><a href="#"><strong>Baixar</strong></a></li>
+                    </ul>
+                </div>
+                <div class="nav-header-bar">
 
-            </div>
-            <div class="nav-header-install">
-                    <i class="fa-regular fa-circle-down"></i>
-             <button>Instalar aplicativo</button>
-            </div>
-            <div class="nav-header-signup">
-                <button>Inscrever-se</button>
-            </div>
-                <div class="nav-header-getin">
-                <button>Entrar</button>
-            </div>
-        </div>
+                </div>
+                <div class="install">
+                    <div class="nav-header-install">
+                            <i class="fa-regular fa-circle-down"></i>
+                    <button>Instalar aplicativo</button>
+                    </div>
+                </div>    
+                <div class="nav-header-signup">
+                    <button>Inscrever-se</button>
+                </div>
+                    <div class="nav-header-getin">
+                    <button>Entrar</button>
+                </div>
+            </div>    
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </nav>
+        
     </div>    
     <div class="container">
         <nav class="sidebar">
@@ -87,10 +99,9 @@
                     <!--Inserir dados com JS-->
                 </div>
             </section>
-
         </main>
     </div>
 </body>
-<script src="./scripts.js"></script>
+<script src="scripts.js"></script>
 
 </html>

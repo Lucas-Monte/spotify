@@ -46,8 +46,13 @@ document.addEventListener ('DOMContentLoaded', () => {
         albumsGrid.appendChild(albumCard);
     })
     
+    
 
 })
+
+function toggleMenu(){
+    document.querySelector(".nav-menu").classList.toggle("show");
+}
 
 
 
