@@ -327,12 +327,12 @@ main {
         flex-direction: column;
         justify-content: center;
         position: absolute;
-        top: 12%;
+        top: 10%;
         right: 8px;
-        width: 35%;
+        width: 96%;
         background: #282828;
         text-align: center;
-        padding: 20% 0;
+        padding: 5% 0;
     }
 
     .links {
@@ -357,6 +357,10 @@ main {
         cursor: pointer;
         position: absolute;
         right: 8px;
+    }
+
+    .menu-toggle i {
+        font-size: 1.5rem;
     }
 
     .nav-menu.show {
